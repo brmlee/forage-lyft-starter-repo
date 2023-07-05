@@ -1,12 +1,13 @@
-from tires import Tires
+from tires.tires import Tires
 
 
-class OctoprimeTire(Tires):
-    def __init__(self, tire_array):
-        tire_wear_array = tire_array
+class OctoprimeTires(Tires):
+    def __init__(self, tire_wear):
+        self.tire_wear = tire_wear
+
     
     def needs_service(self):
-        if sum(tire_wear_array) >= 3:
+        if sum(self.tire_wear) >= 3:
             return True
         else:
             return False

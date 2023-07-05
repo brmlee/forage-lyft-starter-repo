@@ -8,4 +8,4 @@ class SpindlerBattery(Car, ABC):
 
 
     def needs_service(self):
-        return self.curret_date - self.last_service_date > 2
+        return self.curret_date - self.last_service_date > 3
